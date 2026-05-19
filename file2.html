@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Application Form</title>
+    <style>
+        header {
+            background-color: #4bcce9;
+            color: rgb(28, 3, 3);
+            padding: 10px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            background-color:aliceblue;
+        }
+        footer{
+            background-color: #84e7f4;
+            color: rgb(28, 3, 3);
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid #0fd952;
+            border-radius: 7px;
+        }
+        label {
+            display: inline-block;
+            font-weight: bold;
+        }
+        button{
+            background-color: #4bcce9;
+            color: rgb(28, 3, 3);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Job Application Form</h1>
+    </header>
+    <section>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone_no.">Phone Number:</label>
+            &nbsp;
+            <input type="tel" id="phone_no." name="phone_no." maxlength="10" required><p>Maximum 10 digits*</p>
+            <br><br>
+            <label for="resume">Resume:</label>
+            <p>(Please upload your resume in PDF, DOC, or DOCX format)</p><br>
+            <input type="file" id="resume" name="resume" file-format="pdf,doc,docx" required>
+            <br><br>
+            <label for="skills">Skills:</label><br>
+            <input type="checkbox" id="skills" name="skills" value="HTML">HTML<br>
+            <input type="checkbox" id="skills" name="skills" value="CSS">CSS<br>
+            <input type="checkbox" id="skills" name="skills" value="JavaScript">JavaScript<br>
+            <input type="checkbox" id="skills" name="skills" value="Python">Python<br>
+            <input type="checkbox" id="skills" name="skills" value="Java">Java<br>
+            <input type="checkbox" id="skills" name="skills" value="Dockers">Dockers<br>
+            <input type="checkbox" id="skills" name="skills" value="Kubernetes">Kubernetes<br>
+            <br><br>
+            <label for="experience">Experience:</label><br>
+            <input type="number" id="experience" name="experience" min="0" max="50" required> years
+            <br><br>
+            <center><button type="submit">Submit Application</button></center>
+        </form>
+    </section>
+    <footer>
+        <center>
+            <h5>Contact us</h5>
+            <p>Phone: +91 9876543210</p>
+            <p>Email: info@company.com</p>
+        </center>
+    </footer>
+
+</body>
+</html>
